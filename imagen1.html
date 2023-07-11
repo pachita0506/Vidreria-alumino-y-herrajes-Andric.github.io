@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vidreria, Aluminio y Herrajes "Andric"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Incluye la biblioteca Font Awesome -->
+    <style type="text/css">
+        /* Estilos generales para ambos dispositivos */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url(fondo2.jpg) repeat-x;
+            animation: slide 20s linear infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -100% 0;
+            }
+        }
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 767px) {
+            /* Agrega aquí tus estilos específicos para dispositivos móviles */
+        #header {
+            margin: auto;
+            width: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 45px;
+            margin-left: 20px;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+  .nav {
+           position: absolute;
+           top: 25px;
+           left: 73px;
+           z-index: 2;
+        }
+
+        .nav > li {
+            display: inline-block;
+        }
+
+        .nav li a {
+            color: #000;
+            text-decoration: none;
+            padding: 8px 3px;
+            display: block;
+            line-height: 8px;
+            font-size: 8px;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 100px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .nav li:hover > ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li ul {
+            right: -160px;
+            top: 0px;
+        }
+
+        .nav li ul li a {
+            line-height: normal;
+            font-size: 15px;
+        }
+
+  .logo {
+            position: absolute;
+            left: 13px;
+            top: 47%;
+            transform: translateY(-50%);
+            font-family: 'Lobster', cursive;
+            font-size: 23px;
+z-inex: 2;
+}
+
+       .gallery {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Cambia el número de columnas según tus necesidades */
+            grid-gap: 10px; /* Espacio entre las imágenes */
+   text-align: center;
+  width: 100%;
+        }
+
+        .gallery img {
+ width: 80%; 
+            width: 300px; /* Ancho fijo para las imágenes */
+            height: 400px; /* Altura fija para las imágenes */
+            object-fit: cover; /* Ajustar el tamaño de las imágenes manteniendo la proporción */
+  
+        }  
+  .gallery {
+    text-align: center; /* Centra las imágenes horizontalmente */
+  }
+
+  .gallery img {
+    display: block; /* Evita que las imágenes se peguen entre sí */
+    margin: 0 auto; /* Centra las imágenes horizontalmente dentro del contenedor */
+  }
+        .social-icons {
+            position: absolute;
+            right: 10px;
+            top: 25px;
+           z-index: 2;
+        }
+
+        .social-icons a {
+            color: #000;
+            text-decoration: none;
+            margin-left: 2px;
+            font-size: 10px;
+        }
+
+        .social-icons a:first-child {
+            margin-left: 0;
+        }
+
+        .nav li:first-child {
+            margin-right: 0;
+        }
+
+        .nav li:not(:first-child) {
+            margin-right: 10px;
+        }
+ .nav li:first-child {
+            margin-right: 0;
+        }
+
+        .nav li:not(:first-child) {
+            margin-right: 10px;
+        }
+      .container {
+            position: relative;
+            z-index: 1;
+            background-color: #fff;
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 0px;
+        }
+        }
+
+        /* Estilos para computadoras */
+        @media (min-width: 768px) {
+        #header {
+            margin: auto;
+            width: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        .nav {
+           position: absolute;
+           top: 25px;
+           left: 400px;
+           z-index: 2;
+        }
+
+        .nav > li {
+            display: inline-block;
+        }
+
+        .nav li a {
+            color: #000;
+            text-decoration: none;
+            padding: 10px 6px;
+            display: block;
+            line-height: 5px;
+            font-size: 24px;
+
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 140px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .nav li:hover > ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li ul {
+            right: -140px;
+            top: 0px;
+        }
+
+        .nav li ul li a {
+            line-height: normal;
+            font-size: 20px;
+        }
+
+   .logo {
+            position: absolute;
+            left: 17px;
+            top: 20px;
+            transform: translateY(-50%);
+            font-family: 'Lobster', cursive;
+            font-size: 55px;
+z-inex: 2;
+
+        }
+       .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Cambia el número de columnas según tus necesidades */
+            grid-gap: 10px; /* Espacio entre las imágenes */
+   text-align: center;
+  width: 100%;
+        }
+
+        .gallery img {
+ width: 80%; 
+            width: 300px; /* Ancho fijo para las imágenes */
+            height: 400px; /* Altura fija para las imágenes */
+            object-fit: cover; /* Ajustar el tamaño de las imágenes manteniendo la proporción */
+  
+        }
+  .gallery {
+    text-align: center; /* Centra las imágenes horizontalmente */
+  }
+
+  .gallery img {
+    display: block; /* Evita que las imágenes se peguen entre sí */
+    margin: 0 auto; /* Centra las imágenes horizontalmente dentro del contenedor */
+  }
+        .social-icons {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+           z-index: 2;
+        }
+
+        .social-icons a {
+            color: #000;
+            text-decoration: none;
+            margin-left: 10px;
+            font-size: 24px;
+        }
+
+        .social-icons a:first-child {
+            margin-left: 0;
+        }
+
+        .nav li:first-child {
+            margin-right: 0;
+        }
+
+        .nav li:not(:first-child) {
+            margin-right: 10px;
+        }
+ .nav li:first-child {
+            margin-right: 0;
+        }
+
+        .nav li:not(:first-child) {
+            margin-right: 10px;
+        }
+      .container {
+            position: relative;
+            z-index: 1;
+            background-color: #fff;
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 0px;
+        }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <header id="header">
+<h1 class="logo">Andric</h1>
+        </header>
+       
+</div>
+   </div>
+ <nav>
+            <ul class="nav">
+                <li><strong><a href="Inicio.html">Inicio</a></strong></li>
+                <li><strong><a href="#">Categorías</a></strong>
+                    <ul>
+                        <li><strong><a href="Ventanas.html">Ventanas</a></strong></li>
+                        <li><strong><a href="Cancel.html">Cancel</a></strong></li>
+                        <li><strong><a href="Puertas.html">Puertas</a></strong></li>
+                        <li><strong><a href="Herrajes.html">Herrajes</a></strong></li>
+                        <li><strong><a href="Barandales.html">Barandales</a></strong></li>
+                        <li><strong><a href="Varios.html">Varios</a></strong></li>
+                    </ul>
+                </li>
+                <li><strong> <a href="Sobrenosotros.html">Sobre nosotros</a></strong></li>
+                <li><strong><a href="Galería.html">Galería</a></strong></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://api.whatsapp.com/send?phone=527721092362"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100032994923969"><i class="fab fa-facebook"></i></a>
+                <a href=https://www.google.com/maps?q=20.2862546,-98.9449338&z=17&hl=es><i class="fas fa-map-marker-alt"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=%2B527721058370&data=ARC0WdsHvhZW4B9na7dcGyuMzHODZK1px4n-Em4p9vaeqe9oEGKN1q8CCRFzxiRFKOLj_Cq2N5_cEM27nyHpTglqdo_7zz-UHysHcqptUbjYFSHuIrXJNZmUGw3B7GHAE_FuX5200dGoTL_RnMkrLKR9nw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR2UdxEIfARQEr5dcD16comdIU3h2fLyxZa6LmbWUqCL4M5EpZyzO-h-gsE"><i class="fab fa-whatsapp"></i></a>
+                <a href=https://www.google.com/maps?q=20.2717797,-98.9341404&z=17&hl=es><i class="fas fa-map-marker-alt"></i></a>
+            </div>
+        </nav>
+    </div>
+   <div class="background"></div>
+    <div class="content">
+        <h1 style="text-align: center">Ventanas</h1>
+        <div class="image-container">
+    </div>
+ <div class="gallery">
+        <img src="img344.jpg" alt="Imagen 1">
+        <img src="img356.jpg" alt="Imagen 2">
+        <img src="img355.jpg" alt="Imagen 3">
+  <img src="img361.jpg" alt="Imagen 4">
+  <img src="img358.jpg" alt="Imagen 3">
+  <img src="img345.jpg" alt="Imagen 3">
+        <img src="img359.jpg" alt="Imagen 1">
+        <img src="img357.jpg" alt="Imagen 2">
+        <img src="img362.jpg" alt="Imagen 3">
+  <img src="img371.jpg" alt="Imagen 4">
+  <img src="img374.jpg" alt="Imagen 3">
+  <img src="img373.jpg" alt="Imagen 3">
+       <img src="img372.jpg" alt="Imagen 1">
+        <img src="img377.jpg" alt="Imagen 2">
+        <img src="img378.jpg" alt="Imagen 3">
+  <img src="img379.jpg" alt="Imagen 4">
+  <img src="img380.jpg" alt="Imagen 3">
+  <img src="img383.jpg" alt="Imagen 3">
+       <img src="img391.jpg" alt="Imagen 1">
+        <img src="img396.jpg" alt="Imagen 2">
+        <img src="img392.jpg" alt="Imagen 3">
+  <img src="img394.jpg" alt="Imagen 4">
+  <img src="img395.jpg" alt="Imagen 3">
+  <img src="img393.jpg" alt="Imagen 3">
+       <img src="img402.jpg" alt="Imagen 1">
+        <img src="img406.jpg" alt="Imagen 2">
+        <img src="img405.jpg" alt="Imagen 3">
+  <img src="img399.jpg" alt="Imagen 4">
+  <img src="img403.jpg" alt="Imagen 3">
+  <img src="img416.jpg" alt="Imagen 3">
+        <!-- Agrega más imágenes aquí -->
+    </div>
+</body>
+</html>
