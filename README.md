@@ -1,2 +1,2 @@
-# Vidreria-alumino-y-herrajes-Andric.github.io
+# Vidreria-alumino-y-herrajes-Andric
 Visitanos en C.EFRÉN REBOLLEDO,LOS OLIVOS, 42510 ACTOPAN,HGO.A 100 MTS. DE LA GASOLINERA Y EN NUESTRA SUCURSAL FUNDICIÓN BAJA, CALLE CENTRAL#25,ACTOPAN,HGO.
